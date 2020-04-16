@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: b8189dcc9765e0d4abcf97bf973a0b77
+  - enabled: 1
+    path: Assets/Scenes/yeet.unity
+    guid: 45431c5bcd75e6b4ba57f9d177014bd3
   m_configObjects: {}
