@@ -8236,8 +8236,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Er zijn al heel veel zoekende studenten naar dit appartement, je zal dus
-    snel moeten zijn in beslissen.
+  m_Text: Er zijn al heel veel studenten die op zoek zijn naar dit appartement, je
+    zal dus snel moeten zijn in beslissen.
 --- !u!222 &1724293261
 CanvasRenderer:
   m_ObjectHideFlags: 0
