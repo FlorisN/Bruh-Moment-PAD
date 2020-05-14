@@ -11,7 +11,6 @@ public class MainMenuACHT : MonoBehaviour
         SceneManager.LoadScene("BasicGameMenu");
     }
 
-
     public void QuitGame()
     {
         Application.Quit();
