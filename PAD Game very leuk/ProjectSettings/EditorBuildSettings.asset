@@ -9,14 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: 64d1e0e66f3c964438e9c764b9379a45
   - enabled: 1
+    path: Assets/BasicGameMenu.unity
+    guid: f7a2d9143af9c464b80eaa709511a886
+  - enabled: 1
     path: Assets/BasicGame.unity
     guid: 424ce906e3aee634385ccb1fda63499e
   - enabled: 1
     path: Assets/Interaction Scene 1.unity
     guid: a0754b3a48dae144da97a20e4b8f8162
-  - enabled: 1
-    path: Assets/BasicGameMenu.unity
-    guid: f7a2d9143af9c464b80eaa709511a886
   - enabled: 1
     path: Assets/Appartement.unity
     guid: 3a01d8e934d5b9443acb773b99d2704e
