@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BathroomAppart 1.unity
     guid: d142c1d66e540fb419d25d8df58c31d3
+  - enabled: 1
+    path: Assets/Scenes/VerliesScherm.unity
+    guid: 79ef282d2938a154f8134b2d068a4aca
   m_configObjects: {}
