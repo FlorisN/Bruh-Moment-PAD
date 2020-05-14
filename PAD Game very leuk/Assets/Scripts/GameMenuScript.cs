@@ -7,11 +7,11 @@ public class GameMenuScript : MonoBehaviour
 {
     public void YesButton()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        SceneManager.LoadScene("Interaction Scene 1");
     }
 
     public void NoButton()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("VerliesScherm");
     }
 }
