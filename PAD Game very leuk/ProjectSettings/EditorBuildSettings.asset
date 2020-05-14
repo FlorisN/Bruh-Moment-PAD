@@ -9,21 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: 64d1e0e66f3c964438e9c764b9379a45
   - enabled: 1
-    path: Assets/Scenes/BasicGame.unity
-    guid: 424ce906e3aee634385ccb1fda63499e
+    path: Assets/Scenes/BasicGameMenu.unity
+    guid: f7a2d9143af9c464b80eaa709511a886
   - enabled: 1
     path: Assets/Scenes/Interaction Scene 1.unity
     guid: a0754b3a48dae144da97a20e4b8f8162
   - enabled: 1
-    path: Assets/Scenes/BasicGameMenu.unity
-    guid: f7a2d9143af9c464b80eaa709511a886
+    path: Assets/Scenes/WinScreen.unity
+    guid: ab8ff4af1dc397e42a27e3270f49849c
+  - enabled: 1
+    path: Assets/Scenes/VerliesScherm.unity
+    guid: 79ef282d2938a154f8134b2d068a4aca
   - enabled: 1
     path: Assets/Scenes/Appartement.unity
     guid: 3a01d8e934d5b9443acb773b99d2704e
   - enabled: 1
     path: Assets/Scenes/BathroomAppart 1.unity
     guid: d142c1d66e540fb419d25d8df58c31d3
-  - enabled: 1
-    path: Assets/Scenes/VerliesScherm.unity
-    guid: 79ef282d2938a154f8134b2d068a4aca
   m_configObjects: {}

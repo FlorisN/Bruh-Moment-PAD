@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameMenu : MonoBehaviour
+public class GameMenuScript : MonoBehaviour
 {
     public void YesButton()
     {
