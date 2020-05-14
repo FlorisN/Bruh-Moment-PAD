@@ -457,7 +457,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hallo, ik ben Linda.
+  m_Text: Hallo, ik ben dus Linda en ik kan jou misschien helpen.
 --- !u!222 &48110395
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -534,7 +534,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ik heb een appartement voor jou ter beschikking.
+  m_Text: Ik heb namelijk een appartement voor jou ter beschikking.
 --- !u!222 &96527571
 CanvasRenderer:
   m_ObjectHideFlags: 0
