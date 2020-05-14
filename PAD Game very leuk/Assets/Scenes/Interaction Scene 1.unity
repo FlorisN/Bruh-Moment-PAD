@@ -2633,7 +2633,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Dit appartement is 12m\xB2, ligt in een mooie omgeving."
+  m_Text: "Dit appartement is 12m\xB2 en ligt in een mooie omgeving."
 --- !u!222 &637585322
 CanvasRenderer:
   m_ObjectHideFlags: 0
