@@ -189,7 +189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Is this a slum milker?
+  m_Text: Is she scamming you?
 --- !u!222 &2518083
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5808,7 +5808,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Decide. Slum milker or not?
+  m_Text: Decide. Is she scamming you?
 --- !u!222 &1223008362
 CanvasRenderer:
   m_ObjectHideFlags: 0

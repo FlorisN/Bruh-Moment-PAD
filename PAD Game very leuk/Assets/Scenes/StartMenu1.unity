@@ -649,7 +649,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: STOP
+  m_Text: QUIT
 --- !u!222 &138448539
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -726,7 +726,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SPELEN
+  m_Text: PLAY
 --- !u!222 &414080564
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2211,7 +2211,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SPELEN
+  m_Text: PLAY
 --- !u!222 &1184991909
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2231,6 +2231,7 @@ GameObject:
   - component: {fileID: 1214744303}
   - component: {fileID: 1214744302}
   - component: {fileID: 1214744301}
+  - component: {fileID: 1214744304}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -2288,6 +2289,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1214744304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214744300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48f80cd2d1939d94ca909bff906ae0ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1215920097
 GameObject:
   m_ObjectHideFlags: 0
@@ -2536,7 +2549,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1215920103}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1214744302}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1215920103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2953,7 +2977,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1248784061}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1214744302}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1248784061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3078,7 +3113,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: STOP
+  m_Text: 'QUIT
+
+'
 --- !u!222 &1312844818
 CanvasRenderer:
   m_ObjectHideFlags: 0
