@@ -189,7 +189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: JE HEBT VERLOREN
+  m_Text: YOU LOST
 --- !u!222 &215968620
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -897,7 +897,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: KLIK ALS JE NOG EEN KEER WILT PROBEREN
+  m_Text: CLICK IF YOU WANT TO TRY AGAIN
 --- !u!222 &2029301529
 CanvasRenderer:
   m_ObjectHideFlags: 0
