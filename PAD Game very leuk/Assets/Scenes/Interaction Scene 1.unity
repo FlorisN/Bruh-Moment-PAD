@@ -189,7 +189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Is dit een huisjesmelker?
+  m_Text: Is this a slum milker?
 --- !u!222 &2518083
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -302,8 +302,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Er staan wel meer dan 70 studenten ingeschreven voor dit appartement. Er
-    komen elke week weer tientallen bij.
+  m_Text: There are more than 70 students signed in for this apartment. Every week
+    the number gets higher.
 --- !u!222 &26182865
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -380,7 +380,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hoeveel zoekende studenten zijn er?
+  m_Text: How many students are searching for this?
 --- !u!222 &41113788
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -457,7 +457,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hallo, ik ben dus Linda en ik kan jou misschien helpen.
+  m_Text: So, I am Linda and maybe I can help you out.
 --- !u!222 &48110395
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -534,7 +534,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ik heb namelijk een appartement voor jou ter beschikking.
+  m_Text: I have an apartment available for you.
 --- !u!222 &96527571
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1198,7 +1198,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Er zijn wel 3 zwembaden in de buurt.
+  m_Text: There are 3 pools nearby.
 --- !u!222 &293266816
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2633,7 +2633,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Dit appartement is 12m\xB2 en ligt in een mooie omgeving."
+  m_Text: "This appartment is 12m\xB2 and has a beautiful surrounding."
 --- !u!222 &637585322
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3041,7 +3041,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NEE
+  m_Text: NO
 --- !u!222 &675582960
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3228,7 +3228,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Je mag rondkijken maar graag niks aanraken om het schoon te houden.
+  m_Text: You can take a look around, but please don't touch anything. We like to
+    keep everything clean.
 --- !u!222 &693150393
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4229,7 +4230,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Het appartement is inclusief super mooie meubels, keuken en badkamer.
+  m_Text: The apartment is inclusive good furniture, kitchen and bathroom.
 --- !u!222 &855495513
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4740,8 +4741,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Door de locatie wordt er veel naar gezocht en zijn de kosten dus aan de
-    hoge kant.
+  m_Text: Many people search for a location like this, that's why the costs are a
+    little high.
 --- !u!222 &963416868
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5035,7 +5036,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TERUG
+  m_Text: BACK
 --- !u!222 &1024688974
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5272,7 +5273,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: De kosten zijn 1350 euro per maand.
+  m_Text: The costs are 1100 euro's per month.
 --- !u!222 &1110898034
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5653,7 +5654,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mag ik meer informatie over het appartement?
+  m_Text: Can I get more information from the apartment?
 --- !u!222 &1190386467
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5807,7 +5808,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Beslissen, huisjesmelker of niet
+  m_Text: Decide. Slum milker or not?
 --- !u!222 &1223008362
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6056,7 +6057,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hoezo kost dit appartement 1350 euro?
+  m_Text: Why are the costs 1100 euro's per month?
 --- !u!222 &1357378332
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6629,7 +6630,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nou, het is een hartstikke mooie ruimte en de omgeving is erg mooi.
+  m_Text: Well, the area is beautiful and the surroundings are very pretty as well.
 --- !u!222 &1460109546
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7655,7 +7656,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: De mensen in de buurt zijn super aardig.
+  m_Text: The people here are very nice.
 --- !u!222 &1623372779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7932,7 +7933,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Het hele appartement is echt superschoon.
+  m_Text: The apartment is super clean.
 --- !u!222 &1671194896
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8454,8 +8455,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Er zijn al heel veel studenten die op zoek zijn naar dit appartement, je
-    zal dus snel moeten zijn in beslissen.
+  m_Text: There are many students who are searching for this particular apartment,
+    so you have to decide fast.
 --- !u!222 &1724293261
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9138,7 +9139,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Er is een balkon waarop je heerlijk kunt zonnen!
+  m_Text: There is a balcony where you can sunbath all you want!
 --- !u!222 &1834488268
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9657,7 +9658,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: JA
+  m_Text: YES
 --- !u!222 &2046459715
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9939,8 +9940,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Er zijn meer dan 100.000 zoekende studenten naar appartementen in deze
-    omgeving.
+  m_Text: There are more than 100.000 searching students to apartments nearby.
 --- !u!222 &2132919399
 CanvasRenderer:
   m_ObjectHideFlags: 0

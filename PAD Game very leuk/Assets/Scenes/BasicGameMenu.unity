@@ -1149,7 +1149,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hallo, ik ben Linda. Klik in dit vak om verder te gaan.
+  m_Text: Hello, my name is Linda. Click in this box to continue.
 --- !u!222 &1159071706
 CanvasRenderer:
   m_ObjectHideFlags: 0
