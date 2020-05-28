@@ -447,7 +447,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1382189019}
+      - m_Target: {fileID: 1978089223}
         m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
@@ -509,7 +509,6 @@ GameObject:
   - component: {fileID: 103924262}
   - component: {fileID: 103924261}
   - component: {fileID: 103924263}
-  - component: {fileID: 103924264}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -580,7 +579,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 103924264}
+      - m_Target: {fileID: 1978089223}
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -787,18 +786,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &103924264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103924256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48f80cd2d1939d94ca909bff906ae0ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &148131614
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,7 +1323,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 103924264}
+      - m_Target: {fileID: 1978089223}
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -2613,7 +2600,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1382189018}
-  - component: {fileID: 1382189019}
   - component: {fileID: 1382189020}
   m_Layer: 5
   m_Name: MainMenu
@@ -2650,18 +2636,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1382189019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1382189017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48f80cd2d1939d94ca909bff906ae0ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1382189020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2868,7 +2842,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1382189019}
+      - m_Target: {fileID: 1978089223}
         m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
@@ -4882,6 +4856,7 @@ GameObject:
   - component: {fileID: 1978089221}
   - component: {fileID: 1978089220}
   - component: {fileID: 1978089219}
+  - component: {fileID: 1978089223}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4971,6 +4946,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1978089223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978089218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a36ad92dfb4571f41b97508f834d2aaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2007997134
 GameObject:
   m_ObjectHideFlags: 0
