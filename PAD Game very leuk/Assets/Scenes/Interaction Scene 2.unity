@@ -419,7 +419,7 @@ MonoBehaviour:
   dialogue:
     name: Your room
     sentences:
-    - "Your room is 10m\xB2"
+    - "Your room is 10m\xB2."
 --- !u!114 &86669341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4127,7 +4127,7 @@ MonoBehaviour:
   dialogue:
     name: Costs
     sentences:
-    - The costs are 850 per month
+    - The costs are 850 per month.
 --- !u!114 &571797953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7170,7 +7170,7 @@ MonoBehaviour:
   dialogue:
     name: Roommate
     sentences:
-    - You live with 1 other person
+    - You live with 1 other person.
 --- !u!114 &1113850828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11249,7 +11249,7 @@ MonoBehaviour:
   dialogue:
     name: Surface
     sentences:
-    - "The surface of the apartment is 64m\xB2"
+    - "The surface of the apartment is 64m\xB2."
 --- !u!114 &1907141680
 MonoBehaviour:
   m_ObjectHideFlags: 0
