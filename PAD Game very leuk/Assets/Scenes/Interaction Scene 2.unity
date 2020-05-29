@@ -1624,8 +1624,8 @@ MonoBehaviour:
   dialogue:
     name: Students
     sentences:
-    - "There are 25.000 students looking for a apartment like this. \n\nAlso 15 students
-      are signed in for this apartment."
+    - "There are 25.000 students looking for an apartment like this. \n\nAlso 15
+      students are signed in for this apartment."
 --- !u!114 &297315039
 MonoBehaviour:
   m_ObjectHideFlags: 0
