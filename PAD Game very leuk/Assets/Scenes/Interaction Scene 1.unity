@@ -2263,7 +2263,7 @@ MonoBehaviour:
   dialogue:
     name: Surface
     sentences:
-    - "The surface of the apartment is 45m\xB2"
+    - "The surface of the apartment is 45m\xB2."
 --- !u!114 &540556282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11827,7 +11827,7 @@ MonoBehaviour:
   dialogue:
     name: Costs
     sentences:
-    - The costs are 1100 per month
+    - The costs are 1100 euro's per month.
 --- !u!114 &1985400536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12474,7 +12474,7 @@ MonoBehaviour:
   dialogue:
     name: Popularity
     sentences:
-    - It's very popular, but the apartment hasn't been sold yet
+    - It's very popular, but the apartment hasn't been sold yet.
 --- !u!114 &2112459969
 MonoBehaviour:
   m_ObjectHideFlags: 0
