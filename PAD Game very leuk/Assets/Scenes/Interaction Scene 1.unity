@@ -302,7 +302,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: There are more than 70 students signed in for this apartment. Every week
+  m_Text: There are more than 106 students signed in for this apartment. Every week
     the number gets higher.
 --- !u!222 &26182865
 CanvasRenderer:
@@ -3165,7 +3165,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "This appartment is 45m\xB2 and has a beautiful surrounding."
+  m_Text: "This appartment is 45m\xB2 and has beautiful surroundings."
 --- !u!222 &637585322
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3378,7 +3378,7 @@ GameObject:
   - component: {fileID: 642626839}
   - component: {fileID: 642626838}
   m_Layer: 5
-  m_Name: Zwembaden
+  m_Name: Sportfacilities
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5433,7 +5433,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The apartment is inclusive good furniture, kitchen and bathroom.
+  m_Text: The apartment comes with furniture, a kitchen and a bathroom.
 --- !u!222 &855495513
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6021,8 +6021,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Many people search for a location like this, that's why the costs are a
-    little high.
+  m_Text: Many people search for a location like this, that's why the costs are on
+    the high end.
 --- !u!222 &963416868
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10736,7 +10736,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: There are many students who are searching for this particular apartment,
-    so you have to decide fast.
+    so you have to hurry up.
 --- !u!222 &1724293261
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12816,7 +12816,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: There are more than 100.000 searching students to apartments nearby.
+  m_Text: There are more than 100.000 students searching for apartments nearby.
 --- !u!222 &2132919399
 CanvasRenderer:
   m_ObjectHideFlags: 0
