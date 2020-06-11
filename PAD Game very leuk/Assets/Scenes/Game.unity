@@ -1134,6 +1134,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   jumpVelocity: 10
+  JumpSound: {fileID: 8300000, guid: 7cc9769d6398ed741846a507a21b3245, type: 3}
 --- !u!1 &1037523170
 GameObject:
   m_ObjectHideFlags: 0

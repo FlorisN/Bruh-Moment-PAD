@@ -12,6 +12,8 @@ public class Jump2D : MonoBehaviour
     private BoxCollider2D boxCollider2d;
     private Rigidbody2D rigidbody2d;
 
+    public AudioClip JumpSound;
+
     private void Awake()
     {
         rigidbody2d = transform.GetComponent<Rigidbody2D>();
@@ -23,7 +25,10 @@ public class Jump2D : MonoBehaviour
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
             //this will add a velocity of 'jumpVelocity' to the Y of the Rigidbody2D from the Object this script is used on.
-            rigidbody2d.velocity = Vector2.up * jumpVelocity; 
+            rigidbody2d.velocity = Vector2.up * jumpVelocity;
+
+            //this will add a JumpSound when you can jump, it's from the SoundManager script.
+            SoundManager.Instance.PlayEffect(JumpSound);
         }
     }
 
