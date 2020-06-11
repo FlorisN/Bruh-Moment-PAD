@@ -8,7 +8,7 @@ public class Movement2D : MonoBehaviour
 {
     //Serialize because we want to have this in the editor/inspector.
     [SerializeField] public LayerMask groundLayerMask;
-    private BoxCollider2D boxCollider2d;
+    private CircleCollider2D circleCollider2d;
     private Rigidbody2D rigidbody2d;
 
     public AudioClip JumpSound;
@@ -19,7 +19,7 @@ public class Movement2D : MonoBehaviour
     private void Awake()
     {
         rigidbody2d = transform.GetComponent<Rigidbody2D>();
-        boxCollider2d = transform.GetComponent<BoxCollider2D>();
+        circleCollider2d = transform.GetComponent<CircleCollider2D>();
     }
 
     void Update()
@@ -46,7 +46,7 @@ public class Movement2D : MonoBehaviour
         // Vector2.down because we want to check if there is something there (so we have to move a tiny bit downwards), '.1f' is the down force. 
         // groundLayerMask is the Tagline which you can set the ground on.
 
-        RaycastHit2D raycastHit2d = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.down, .1f, groundLayerMask);
+        RaycastHit2D raycastHit2d = Physics2D.BoxCast(circleCollider2d.bounds.center, circleCollider2d.bounds.size, 0f, Vector2.down, .1f, groundLayerMask);
         return raycastHit2d.collider != null;
     }
 }
