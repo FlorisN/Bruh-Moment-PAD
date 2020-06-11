@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class Jump2D : MonoBehaviour
+public class Movement2D : MonoBehaviour
 
 {
     //Serialize because we want to have this in the editor/inspector.
@@ -13,6 +13,9 @@ public class Jump2D : MonoBehaviour
 
     public AudioClip JumpSound;
 
+    public float moveSpeed = 6f;
+    public float jumpVelocity = 5;
+
     private void Awake()
     {
         rigidbody2d = transform.GetComponent<Rigidbody2D>();
@@ -21,14 +24,10 @@ public class Jump2D : MonoBehaviour
 
     void Update()
     {
-        float moveSpeed = 3f;
-
         rigidbody2d.velocity = new Vector2(+moveSpeed, rigidbody2d.velocity.y);
 
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
-            float jumpVelocity = 5;
-
             //this will add a velocity of 'jumpVelocity' to the Y of the Rigidbody2D from the Object this script is used on.
             rigidbody2d.velocity = Vector2.up * jumpVelocity;
 
