@@ -8,7 +8,6 @@ public class Jump2D : MonoBehaviour
 {
     //Serialize because we want to have this in the editor/inspector.
     [SerializeField] public LayerMask groundLayerMask;
-    public float jumpVelocity = 10;
     private BoxCollider2D boxCollider2d;
     private Rigidbody2D rigidbody2d;
 
@@ -20,10 +19,16 @@ public class Jump2D : MonoBehaviour
         boxCollider2d = transform.GetComponent<BoxCollider2D>();
     }
 
-    private void Update()
+    void Update()
     {
+        float moveSpeed = 3f;
+
+        rigidbody2d.velocity = new Vector2(+moveSpeed, rigidbody2d.velocity.y);
+
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
+            float jumpVelocity = 5;
+
             //this will add a velocity of 'jumpVelocity' to the Y of the Rigidbody2D from the Object this script is used on.
             rigidbody2d.velocity = Vector2.up * jumpVelocity;
 
@@ -35,7 +40,7 @@ public class Jump2D : MonoBehaviour
     public bool IsGrounded()
     {
 
-        // Raycast because of checking the ground, BoxCast because if it's only a raycast there only is a line in the middle of the sprite so it can't jump when it's on an edge.
+        // Raycast because we want to check if the ground is below, BoxCast because if it's only a raycast there only is a line in the middle of the sprite so it can't jump when it's on an edge.
         // bounds.center = center from boxCollider of the object.
         // bounds.size = size from boxCollider of the object.
         // 0f = rotation.
