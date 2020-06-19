@@ -8,6 +8,9 @@ public class Jump2D : MonoBehaviour
 {
     //Serialize because we want to have this in the editor/inspector.
     [SerializeField] public LayerMask groundLayerMask;
+
+
+    public float moveSpeed = 6f;
     public float jumpVelocity = 10;
     private BoxCollider2D boxCollider2d;
     private Rigidbody2D rigidbody2d;
@@ -20,6 +23,8 @@ public class Jump2D : MonoBehaviour
 
     private void Update()
     {
+
+        rigidbody2d.velocity = new Vector2(+moveSpeed, rigidbody2d.velocity.y);
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
             //this will add a velocity of 'jumpVelocity' to the Y of the Rigidbody2D from the Object this script is used on.
