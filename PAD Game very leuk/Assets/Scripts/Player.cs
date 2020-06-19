@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
-public class Movement2D : MonoBehaviour
+public class Player : MonoBehaviour
 
 {
     //Serialize because we want to have this in the editor/inspector.
