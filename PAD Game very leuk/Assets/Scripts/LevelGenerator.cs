@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class LevelGenerator: MonoBehaviour
 {
-    private const float PLAYER_DISTANCE_SPAWN_LEVEL_PART = 200f;
+    private const float PLAYER_DISTANCE_SPAWN_LEVEL_PART = 100f;
 
     //We want this in the editor so we can put the prefabs in here
     [SerializeField] private Transform levelPart_Start;
@@ -20,7 +20,7 @@ public class LevelGenerator: MonoBehaviour
         lastEndPosition = levelPart_Start.Find("EndPosition").position;
 
         //First few level parts are spawning in:
-        int startingSpawnLevelParts = 10;
+        int startingSpawnLevelParts = 2;
 
         for (int i = 0; i < startingSpawnLevelParts; i++)
         {
