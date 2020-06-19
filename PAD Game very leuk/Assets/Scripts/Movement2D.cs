@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class Movement2D : MonoBehaviour
@@ -8,6 +9,8 @@ public class Movement2D : MonoBehaviour
 {
     //Serialize because we want to have this in the editor/inspector.
     [SerializeField] public LayerMask groundLayerMask;
+    [SerializeField] public LayerMask deadLayerMask;
+
     private CircleCollider2D circleCollider2d;
     private Rigidbody2D rigidbody2d;
 
@@ -15,6 +18,7 @@ public class Movement2D : MonoBehaviour
 
     public float moveSpeed = 6f;
     public float jumpVelocity = 5;
+    public float x = 0;
 
     private void Awake()
     {
@@ -24,6 +28,11 @@ public class Movement2D : MonoBehaviour
 
     void Update()
     {
+        if (rigidbody2d.position.y < -6)
+        {
+            SceneManager.LoadScene("End");
+        }
+
         rigidbody2d.velocity = new Vector2(+moveSpeed, rigidbody2d.velocity.y);
 
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
@@ -33,6 +42,7 @@ public class Movement2D : MonoBehaviour
 
             //this will add a JumpSound when you can jump, it's from the SoundManager script.
             SoundManager.Instance.PlayEffect(JumpSound);
+
         }
     }
 
