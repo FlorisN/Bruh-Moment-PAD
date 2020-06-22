@@ -31,21 +31,31 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-
+        //The speed of the player is the moveSpeed, but it increases with the time, 
+        //maxSpeed is the maximum speed of the player.
         if (moveSpeed < maxSpeed)
         {
             moveSpeed = moveSpeed + increaseSpeed * 0.0002f;
         }
         else moveSpeed = maxSpeed;
 
+
+        //Player dies
         if (rigidbody2d.position.y < -6)
         {
-           isDeadPanel.SetActive(true);
-            rigidbody2d.velocity = Vector2.up * 0;
+            //The DeathPanel (which is picked in the inspector) wil be active.
+            isDeadPanel.SetActive(true);
+
+            //The rigidbody will not move.
+            rigidbody2d.constraints = RigidbodyConstraints2D.FreezePosition;
+
+            //moveSpeed will be 0
+            moveSpeed = 0;
         }
 
         rigidbody2d.velocity = new Vector2(+moveSpeed, rigidbody2d.velocity.y);
 
+        //Check if the player is on the ground and if the spacebar is down
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
             //this will add a velocity of 'jumpVelocity' to the Y of the Rigidbody2D from the Object this script is used on.
@@ -55,6 +65,7 @@ public class Player : MonoBehaviour
             SoundManager.Instance.PlayEffect(JumpSound);
 
         }
+        //The speed of the player so we can track it in the console.
         Debug.Log(moveSpeed);
         
     }
