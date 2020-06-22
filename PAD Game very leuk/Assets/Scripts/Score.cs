@@ -12,7 +12,9 @@ public class Score : MonoBehaviour
     void Update()
     {
         if (PlayerPrefs.GetFloat("HighScore") < player.position.x)
-            PlayerPrefs.SetFloat("HighScore", player.position.x + 1);
+        {
+            PlayerPrefs.SetFloat("HighScore", player.position.x);
+        }
 
         //We need to change the text and it has to be a string.
         //The number (player pos x) will be converted to a string with 'ToString()'.
