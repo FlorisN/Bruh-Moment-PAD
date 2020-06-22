@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
     public float jumpVelocity = 5f;
     public float maxSpeed = 10f;
 
+    public GameObject isDeadPanel;
+
     private void Awake()
     {
         rigidbody2d = transform.GetComponent<Rigidbody2D>();
@@ -38,7 +40,8 @@ public class Player : MonoBehaviour
 
         if (rigidbody2d.position.y < -6)
         {
-            SceneManager.LoadScene("End");
+           isDeadPanel.SetActive(true);
+            rigidbody2d.velocity = Vector2.up * 0;
         }
 
         rigidbody2d.velocity = new Vector2(+moveSpeed, rigidbody2d.velocity.y);
@@ -69,4 +72,5 @@ public class Player : MonoBehaviour
         RaycastHit2D raycastHit2d = Physics2D.BoxCast(circleCollider2d.bounds.center, circleCollider2d.bounds.size, 0f, Vector2.down, .1f, groundLayerMask);
         return raycastHit2d.collider != null;
     }
+
 }

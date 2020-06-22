@@ -5,7 +5,6 @@ public class Score : MonoBehaviour
 
     public Transform player;
     public Text score;
-    public int offset;
 
     // Update is called once per frame
     void Update()
