@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 
@@ -31,6 +32,8 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+
+
         //The speed of the player is the moveSpeed, but it increases with the time, 
         //maxSpeed is the maximum speed of the player.
         if (moveSpeed < maxSpeed)
@@ -67,7 +70,7 @@ public class Player : MonoBehaviour
         }
         //The speed of the player so we can track it in the console.
         Debug.Log(moveSpeed);
-        
+
     }
 
     public bool IsGrounded()
