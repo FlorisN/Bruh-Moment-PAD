@@ -662,7 +662,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 809085423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a15b8065e0869c42b652741a484ef73, type: 3}
+  m_Script: {fileID: 11500000, guid: 4cfa232f295ec4b48b994a012a9a0884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   groundLayerMask:
@@ -670,11 +670,10 @@ MonoBehaviour:
     m_Bits: 256
   deadLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   JumpSound: {fileID: 8300000, guid: 7cc9769d6398ed741846a507a21b3245, type: 3}
   moveSpeed: 4.5
   jumpVelocity: 5
-  x: 0
 --- !u!1 &849577064
 GameObject:
   m_ObjectHideFlags: 0

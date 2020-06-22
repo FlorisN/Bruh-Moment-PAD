@@ -18,7 +18,6 @@ public class Player : MonoBehaviour
 
     public float moveSpeed = 6f;
     public float jumpVelocity = 5;
-    public float x = 0;
 
     private void Awake()
     {
