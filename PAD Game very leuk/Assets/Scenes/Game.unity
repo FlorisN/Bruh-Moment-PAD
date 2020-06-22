@@ -1465,21 +1465,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2567385785552128404, guid: b41d5e4a1ed097f44907405c53adfa1e,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: -909433913
-      objectReference: {fileID: 0}
-    - target: {fileID: 2567385785552128404, guid: b41d5e4a1ed097f44907405c53adfa1e,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2567385785552128404, guid: b41d5e4a1ed097f44907405c53adfa1e,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 2567385785696338563, guid: b41d5e4a1ed097f44907405c53adfa1e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1534,21 +1519,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2567385785718568907, guid: b41d5e4a1ed097f44907405c53adfa1e,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: -909433913
-      objectReference: {fileID: 0}
-    - target: {fileID: 2567385785718568907, guid: b41d5e4a1ed097f44907405c53adfa1e,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2567385785718568907, guid: b41d5e4a1ed097f44907405c53adfa1e,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3407811766841868827, guid: b41d5e4a1ed097f44907405c53adfa1e,
         type: 3}
