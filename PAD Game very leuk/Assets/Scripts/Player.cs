@@ -17,7 +17,9 @@ public class Player : MonoBehaviour
     public AudioClip JumpSound;
 
     public float moveSpeed = 6f;
-    public float jumpVelocity = 5;
+    public float increaseSpeed = 1f;
+    public float jumpVelocity = 5f;
+    public float maxSpeed = 10f;
 
     private void Awake()
     {
@@ -27,6 +29,13 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+
+        if (moveSpeed < maxSpeed)
+        {
+            moveSpeed = moveSpeed + increaseSpeed * 0.0002f;
+        }
+        else moveSpeed = maxSpeed;
+
         if (rigidbody2d.position.y < -6)
         {
             SceneManager.LoadScene("End");
@@ -43,6 +52,8 @@ public class Player : MonoBehaviour
             SoundManager.Instance.PlayEffect(JumpSound);
 
         }
+        Debug.Log(moveSpeed);
+        
     }
 
     public bool IsGrounded()
