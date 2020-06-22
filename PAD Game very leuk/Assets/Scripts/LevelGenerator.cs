@@ -39,6 +39,9 @@ public class LevelGenerator: MonoBehaviour
 
     private void SpawnLevelPart()
     {
+        //Transform to get the position of the lastLevelPart, so the next LevelPart wil spawn on the
+        //EndPosition of the one that he is checking right now
+
         Transform lastLevelPartTransform = SpawnLevelPart(lastEndPosition);
         lastEndPosition = lastLevelPartTransform.Find("EndPosition").position;
     }
@@ -46,6 +49,9 @@ public class LevelGenerator: MonoBehaviour
     //This is a transform because we want to know where to locate the next part
     private Transform SpawnLevelPart(Vector3 spawnPosition)
     {
+        //Quaternion.identity so it doesn't rotate
+        //Transform to get the position
+
         Transform levelPartTransform = Instantiate(LevelPart_1, spawnPosition, Quaternion.identity);
         return levelPartTransform;
     }
