@@ -24,6 +24,5 @@ public class Score : MonoBehaviour
         score.text = "SCORE: " + player.position.x.ToString("0");
 
         highscoreText.text = "HIGHSCORE: " + (int)PlayerPrefs.GetFloat("HighScore");
-        
     }
 }
