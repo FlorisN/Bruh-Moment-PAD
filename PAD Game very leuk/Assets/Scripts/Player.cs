@@ -77,7 +77,7 @@ public class Player : MonoBehaviour
     {
 
         //Player dies
-        if (collision.gameObject.name == "DeadZone")
+        if (collision.gameObject.tag == "Spike" || collision.gameObject.name == "DeadZone")
         {
             //The DeathPanel (which is picked in the inspector) will be active.
             isDeadPanel.SetActive(true);
