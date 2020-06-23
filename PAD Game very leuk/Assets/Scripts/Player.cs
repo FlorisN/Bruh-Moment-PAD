@@ -79,9 +79,7 @@ public class Player : MonoBehaviour
         //Player dies
         if (collision.gameObject.name == "DeadZone")
         {
-            Debug.Log("We are dead");
-
-            //The DeathPanel (which is picked in the inspector) wil be active.
+            //The DeathPanel (which is picked in the inspector) will be active.
             isDeadPanel.SetActive(true);
 
             //The rigidbody will not move.
