@@ -10,7 +10,6 @@ public class Player : MonoBehaviour
 {
     //Serialize because we want to have this in the editor/inspector.
     [SerializeField] public LayerMask groundLayerMask;
-    [SerializeField] public LayerMask deadLayerMask;
 
     private CircleCollider2D circleCollider2d;
     private Rigidbody2D rigidbody2d;
@@ -43,19 +42,6 @@ public class Player : MonoBehaviour
         else moveSpeed = maxSpeed;
 
 
-        //Player dies
-        if (rigidbody2d.position.y < -6)
-        {
-            //The DeathPanel (which is picked in the inspector) wil be active.
-            isDeadPanel.SetActive(true);
-
-            //The rigidbody will not move.
-            rigidbody2d.constraints = RigidbodyConstraints2D.FreezePosition;
-
-            //moveSpeed will be 0
-            moveSpeed = 0;
-        }
-
         rigidbody2d.velocity = new Vector2(+moveSpeed, rigidbody2d.velocity.y);
 
         //Check if the player is on the ground and if the spacebar is down
@@ -69,7 +55,7 @@ public class Player : MonoBehaviour
 
         }
         //The speed of the player so we can track it in the console.
-        Debug.Log(moveSpeed);
+        //Debug.Log(moveSpeed);
 
     }
 
@@ -85,6 +71,25 @@ public class Player : MonoBehaviour
 
         RaycastHit2D raycastHit2d = Physics2D.BoxCast(circleCollider2d.bounds.center, circleCollider2d.bounds.size, 0f, Vector2.down, .1f, groundLayerMask);
         return raycastHit2d.collider != null;
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        //Player dies
+        if (collision.gameObject.name == "DeadZone")
+        {
+            Debug.Log("We are dead");
+
+            //The DeathPanel (which is picked in the inspector) wil be active.
+            isDeadPanel.SetActive(true);
+
+            //The rigidbody will not move.
+            rigidbody2d.constraints = RigidbodyConstraints2D.FreezePosition;
+
+            //moveSpeed will be 0
+            moveSpeed = 0;
+        }
     }
 
 }
