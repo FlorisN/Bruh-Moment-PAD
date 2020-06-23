@@ -1705,8 +1705,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelPart_Start: {fileID: 1430960904}
-  LevelPart_1: {fileID: 2567385785696338563, guid: b41d5e4a1ed097f44907405c53adfa1e,
-    type: 3}
+  levelPartList:
+  - {fileID: 2567385785696338563, guid: b41d5e4a1ed097f44907405c53adfa1e, type: 3}
+  - {fileID: 6675567626561910278, guid: 0769ed5145277ba43bd79f51ebfc7e4f, type: 3}
 --- !u!4 &775511634
 Transform:
   m_ObjectHideFlags: 0
@@ -1861,7 +1862,7 @@ MonoBehaviour:
   JumpSound: {fileID: 8300000, guid: 7cc9769d6398ed741846a507a21b3245, type: 3}
   moveSpeed: 4.5
   increaseSpeed: 1
-  jumpVelocity: 5
+  jumpVelocity: 5.5
   maxSpeed: 10
   isDeadPanel: {fileID: 112016423}
 --- !u!1 &826859141
@@ -3258,7 +3259,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.060527563, y: -1.5493603}
+  m_Offset: {x: -0.13177401, y: -1.5493603}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3269,7 +3270,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.2178097, y: 5.65872}
+  m_Size: {x: 3.075317, y: 5.65872}
   m_EdgeRadius: 0
 --- !u!4 &1724905536
 Transform:

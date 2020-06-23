@@ -8,9 +8,11 @@ public class Score : MonoBehaviour
     public Text score;
     public Text highscoreText;
 
-    // Update is called once per frame
     void Update()
     {
+
+        //When the float that is in the PlayerPrefs is lower than the score right now (player.position.x),
+        //then the PlayerPrefs will set the HighScore to score (player.position.x).
         if (PlayerPrefs.GetFloat("HighScore") < player.position.x)
         {
             PlayerPrefs.SetFloat("HighScore", player.position.x);

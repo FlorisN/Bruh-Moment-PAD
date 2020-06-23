@@ -10,7 +10,7 @@ public class LevelGenerator: MonoBehaviour
 
     //We want this in the editor so we can put the prefabs in here
     [SerializeField] private Transform levelPart_Start;
-    [SerializeField] private Transform LevelPart_1;
+    [SerializeField] private List<Transform> levelPartList;
 
     private Vector3 lastEndPosition;
     private void Awake()
@@ -31,6 +31,8 @@ public class LevelGenerator: MonoBehaviour
 
     private void Update()
     {
+        //When the distance of this object (on the player) and the lastEndPosition is less than PLAYER_DIST...
+        //then the method SpawnLevelPart(); will be called.
         if (Vector3.Distance(transform.position, lastEndPosition) < PLAYER_DISTANCE_SPAWN_LEVEL_PART)
         {
             //Spawn another level part
@@ -41,22 +43,26 @@ public class LevelGenerator: MonoBehaviour
     private void SpawnLevelPart()
     {
         //Transform to get the position of the lastLevelPart, so the next LevelPart wil spawn on the
-        //EndPosition of the one that he is checking right now
+        //EndPosition of the one that's checking right now
 
-        Transform lastLevelPartTransform = SpawnLevelPart(lastEndPosition);
+        Transform chosenLevelPart = levelPartList[Random.Range(0, levelPartList.Count)]
+;        Transform lastLevelPartTransform = SpawnLevelPart( chosenLevelPart, lastEndPosition);
         lastEndPosition = lastLevelPartTransform.Find("EndPosition").position;
-        //if (Vector3.Distance(transform.position, lastEndPosition) > PLAYER_DISANCE_DELETE_LEVEL_PART) {
-        //    Destroy(LevelPart_1);
-        //} 
+
+
+
+        if (Vector3.Distance(transform.position, lastEndPosition) > PLAYER_DISANCE_DELETE_LEVEL_PART) {
+            Destroy(lastLevelPartTransform);
+        } 
     }
 
     //This is a transform because we want to know where to locate the next part
-    private Transform SpawnLevelPart(Vector3 spawnPosition)
+    private Transform SpawnLevelPart(Transform levelPart, Vector3 spawnPosition)
     {
         //Quaternion.identity so it doesn't rotate
         //Transform to get the position
 
-        Transform levelPartTransform = Instantiate(LevelPart_1, spawnPosition, Quaternion.identity);
+        Transform levelPartTransform = Instantiate(levelPart, spawnPosition, Quaternion.identity);
         return levelPartTransform;
     }
 }
