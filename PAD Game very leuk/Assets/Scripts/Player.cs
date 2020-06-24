@@ -23,9 +23,10 @@ public class Player : MonoBehaviour
     public float slowSpeed = 4;
 
 
-    public float hangTime = .5f;
-    private float hangCounter;
-   
+    public float airTime = .5f;
+    private float airCounter;
+
+ 
 
     public GameObject isDeadPanel;
 
@@ -48,30 +49,30 @@ public class Player : MonoBehaviour
         }
         else moveSpeed = maxSpeed;
 
+        //checks if the player is on the ground and adds a airTime to allow the player to jump a little bit after going off the ground
         if (IsGrounded())
         {
-            hangCounter = hangTime;
+            airCounter = airTime;
         } else
         {
-            hangCounter -= Time.deltaTime;
+            airCounter -= Time.deltaTime;
         }
-        print(hangCounter);
-
+   
        
-            rigidbody2d.velocity = new Vector2(+moveSpeed , rigidbody2d.velocity.y);
+
+
+        //Moves the player on the x-as
+         rigidbody2d.velocity = new Vector2(+moveSpeed , rigidbody2d.velocity.y);
         //When key is released jump length will lower, gives difference in jump length depending on how long you hold the jump button
         if(Input.GetButtonUp("Jump") && rigidbody2d.velocity.y > 0)
         {
             rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, rigidbody2d.velocity.y * .5f);
         }
-       // if (Input.GetAxis("Horizontal") )
-      //  {
-       //     rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x * .5f, rigidbody2d.velocity.y );
-       // }
+       
 
 
-        //Check if the player is on the ground and if the spacebar is down
-        if ((IsGrounded() || hangCounter > 0f)&& Input.GetKeyDown(KeyCode.Space) )
+        //Check if the player is on the ground or if hangcounter > 0 before you are able to jump
+        if ((IsGrounded() || airCounter > 0f)&& Input.GetKeyDown(KeyCode.Space) )
         {
             //this will add a velocity of 'jumpVelocity' to the Y of the Rigidbody2D from the Object this script is used on.
             rigidbody2d.velocity = Vector2.up * jumpVelocity;
