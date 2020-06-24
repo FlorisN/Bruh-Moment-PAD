@@ -40,7 +40,10 @@ public class Player : MonoBehaviour
             moveSpeed = moveSpeed + increaseSpeed * 0.0002f;
         }
         else moveSpeed = maxSpeed;
-
+        while (Input.GetKey("left"))
+        {
+            moveSpeed = 4;
+        }
 
         rigidbody2d.velocity = new Vector2(+moveSpeed, rigidbody2d.velocity.y);
 
