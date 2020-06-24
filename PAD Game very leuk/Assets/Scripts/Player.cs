@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
     public float increaseSpeed = 1f;
     public float jumpVelocity = 5f;
     public float maxSpeed = 10f;
+    public float slowSpeed = 4;
+   
 
     public GameObject isDeadPanel;
 
@@ -38,14 +40,20 @@ public class Player : MonoBehaviour
         if (moveSpeed < maxSpeed)
         {
             moveSpeed = moveSpeed + increaseSpeed * 0.0002f;
+            
         }
         else moveSpeed = maxSpeed;
-        while (Input.GetKey("left"))
-        {
-            moveSpeed = 4;
-        }
 
-        rigidbody2d.velocity = new Vector2(+moveSpeed, rigidbody2d.velocity.y);
+        if (Input.GetKeyDown(KeyCode.LeftArrow)) {
+            rigidbody2d.velocity = new Vector2(+slowSpeed, rigidbody2d.velocity.y);
+        }
+        else
+        {
+            rigidbody2d.velocity = new Vector2(+moveSpeed, rigidbody2d.velocity.y);
+        }
+        
+
+        
 
         //Check if the player is on the ground and if the spacebar is down
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
@@ -61,6 +69,10 @@ public class Player : MonoBehaviour
         //Debug.Log(moveSpeed);
 
     }
+
+
+  
+   
 
     public bool IsGrounded()
     {
