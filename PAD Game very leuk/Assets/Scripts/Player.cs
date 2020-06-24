@@ -21,6 +21,10 @@ public class Player : MonoBehaviour
     public float jumpVelocity = 5f;
     public float maxSpeed = 10f;
     public float slowSpeed = 4;
+
+
+    public float hangTime = .5f;
+    private float hangCounter;
    
 
     public GameObject isDeadPanel;
@@ -44,19 +48,30 @@ public class Player : MonoBehaviour
         }
         else moveSpeed = maxSpeed;
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow)) {
-            rigidbody2d.velocity = new Vector2(+slowSpeed, rigidbody2d.velocity.y);
-        }
-        else
+        if (IsGrounded())
         {
-            rigidbody2d.velocity = new Vector2(+moveSpeed, rigidbody2d.velocity.y);
+            hangCounter = hangTime;
+        } else
+        {
+            hangCounter -= Time.deltaTime;
         }
-        
+        print(hangCounter);
 
-        
+       
+            rigidbody2d.velocity = new Vector2(+moveSpeed , rigidbody2d.velocity.y);
+        //When key is released jump length will lower, gives difference in jump length depending on how long you hold the jump button
+        if(Input.GetButtonUp("Jump") && rigidbody2d.velocity.y > 0)
+        {
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, rigidbody2d.velocity.y * .5f);
+        }
+       // if (Input.GetAxis("Horizontal") )
+      //  {
+       //     rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x * .5f, rigidbody2d.velocity.y );
+       // }
+
 
         //Check if the player is on the ground and if the spacebar is down
-        if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
+        if ((IsGrounded() || hangCounter > 0f)&& Input.GetKeyDown(KeyCode.Space) )
         {
             //this will add a velocity of 'jumpVelocity' to the Y of the Rigidbody2D from the Object this script is used on.
             rigidbody2d.velocity = Vector2.up * jumpVelocity;
