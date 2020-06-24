@@ -6,13 +6,14 @@ using UnityEngine;
 public class LevelGenerator: MonoBehaviour
 {
     private const float PLAYER_DISTANCE_SPAWN_LEVEL_PART = 100f;
-    private const float PLAYER_DISANCE_DELETE_LEVEL_PART = 200f;
+    //private const float PLAYER_DISANCE_DELETE_LEVEL_PART = 200f;
 
     //We want this in the editor so we can put the prefabs in here
     [SerializeField] private Transform levelPart_Start;
     [SerializeField] private List<Transform> levelPartList;
 
     private Vector3 lastEndPosition;
+
     private void Awake()
     {
         //We use Transform because we want to know the positions from the EndPosition GameObject
