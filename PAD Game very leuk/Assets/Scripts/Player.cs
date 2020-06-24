@@ -20,6 +20,13 @@ public class Player : MonoBehaviour
     public float increaseSpeed = 1f;
     public float jumpVelocity = 5f;
     public float maxSpeed = 10f;
+    public float slowSpeed = 4;
+
+
+    public float airTime = .5f;
+    private float airCounter;
+
+ 
 
     public GameObject isDeadPanel;
 
@@ -38,14 +45,34 @@ public class Player : MonoBehaviour
         if (moveSpeed < maxSpeed)
         {
             moveSpeed = moveSpeed + increaseSpeed * 0.0002f;
+            
         }
         else moveSpeed = maxSpeed;
 
+        //checks if the player is on the ground and adds a airTime to allow the player to jump a little bit after going off the ground
+        if (IsGrounded())
+        {
+            airCounter = airTime;
+        } else
+        {
+            airCounter -= Time.deltaTime;
+        }
+   
+       
 
-        rigidbody2d.velocity = new Vector2(+moveSpeed, rigidbody2d.velocity.y);
 
-        //Check if the player is on the ground and if the spacebar is down
-        if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
+        //Moves the player on the x-as
+         rigidbody2d.velocity = new Vector2(+moveSpeed , rigidbody2d.velocity.y);
+        //When key is released jump length will lower, gives difference in jump length depending on how long you hold the jump button
+        if(Input.GetButtonUp("Jump") && rigidbody2d.velocity.y > 0)
+        {
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, rigidbody2d.velocity.y * .5f);
+        }
+       
+
+
+        //Check if the player is on the ground or if hangcounter > 0 before you are able to jump
+        if ((IsGrounded() || airCounter > 0f)&& Input.GetKeyDown(KeyCode.Space) )
         {
             //this will add a velocity of 'jumpVelocity' to the Y of the Rigidbody2D from the Object this script is used on.
             rigidbody2d.velocity = Vector2.up * jumpVelocity;
@@ -58,6 +85,10 @@ public class Player : MonoBehaviour
         //Debug.Log(moveSpeed);
 
     }
+
+
+  
+   
 
     public bool IsGrounded()
     {
@@ -77,7 +108,7 @@ public class Player : MonoBehaviour
     {
 
         //Player dies
-        if (collision.gameObject.name == "DeadZone")
+        if (collision.gameObject.tag == "Spike" || collision.gameObject.name == "DeadZone")
         {
             //The DeathPanel (which is picked in the inspector) will be active.
             isDeadPanel.SetActive(true);
