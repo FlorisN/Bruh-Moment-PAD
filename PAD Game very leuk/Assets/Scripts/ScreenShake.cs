@@ -23,10 +23,8 @@ public class ScreenShake: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (isShaking)
         {
-
             if (shakeTime > 0)
             {
                 //change position of camera based on a Random.insideUnitSphere.
