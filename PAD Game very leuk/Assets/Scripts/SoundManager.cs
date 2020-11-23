@@ -8,7 +8,6 @@ public class SoundManager : MonoBehaviour
 	public AudioSource EffectsSource;
 	public AudioSource MusicSource;
 
-
 	// Singleton instance.
 	public static SoundManager Instance = null;
 
@@ -26,7 +25,7 @@ public class SoundManager : MonoBehaviour
 			Destroy(gameObject);
 		}
 
-		//Set SoundManager to DontDestroyOnLoad so that it won't be destroyed when reloading our scene.
+		//Set SoundManager to DontDestroyOnLoad so that it won't be destroyed when reloading our next scene.
 		DontDestroyOnLoad(gameObject);
 	}
 

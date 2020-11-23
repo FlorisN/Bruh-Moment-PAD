@@ -468,7 +468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6790023649593687173}
   - component: {fileID: 9151493412848616539}
-  - component: {fileID: 3675569739313123717}
+  - component: {fileID: 4257751661612780015}
   m_Layer: 0
   m_Name: spikes (1)
   m_TagString: Spike
@@ -540,8 +540,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3675569739313123717
-BoxCollider2D:
+--- !u!70 &4257751661612780015
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -553,19 +553,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0006576739, y: -0.017338634}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.19, y: 0.16}
-    newSize: {x: 0.19, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.1808095, y: 0.12532273}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0, y: -0.04}
+  m_Size: {x: 0.18, y: 0.09}
+  m_Direction: 1
 --- !u!1 &8941502089203175950
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,7 +566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1428579840940029432}
   - component: {fileID: 2890133963430308009}
-  - component: {fileID: 8861472311588094156}
+  - component: {fileID: 975755285243214628}
   m_Layer: 0
   m_Name: spikes
   m_TagString: Spike
@@ -648,8 +638,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &8861472311588094156
-BoxCollider2D:
+--- !u!70 &975755285243214628
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -661,19 +651,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0008675456, y: -0.017380353}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.19, y: 0.16}
-    newSize: {x: 0.19, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.18132612, y: 0.12523928}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0, y: -0.04}
+  m_Size: {x: 0.18, y: 0.09}
+  m_Direction: 1
 --- !u!1001 &2567385783595389787
 PrefabInstance:
   m_ObjectHideFlags: 0

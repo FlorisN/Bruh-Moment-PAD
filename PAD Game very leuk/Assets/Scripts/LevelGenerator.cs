@@ -47,10 +47,8 @@ public class LevelGenerator: MonoBehaviour
         //EndPosition of the one that's checking right now
 
         Transform chosenLevelPart = levelPartList[Random.Range(0, levelPartList.Count)]
-;       Transform lastLevelPartTransform = SpawnLevelPart( chosenLevelPart, lastEndPosition);
+;       Transform lastLevelPartTransform = SpawnLevelPart(chosenLevelPart, lastEndPosition);
         lastEndPosition = lastLevelPartTransform.Find("EndPosition").position;
-
-
 
         if (Vector3.Distance(transform.position, lastEndPosition) > PLAYER_DISANCE_DELETE_LEVEL_PART) {
             Destroy(lastLevelPartTransform);

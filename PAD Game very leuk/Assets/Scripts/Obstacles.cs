@@ -12,6 +12,7 @@ public class Obstacles : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         
     }
+
     void OnTriggerEnter2D(Collider2D col) {
         if (col.CompareTag("Player"))
         {

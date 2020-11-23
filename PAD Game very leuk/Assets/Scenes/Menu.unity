@@ -167,7 +167,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.021
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1081,7 +1081,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CANABALT 2.0
+  m_Text: HOUSE RUN
 --- !u!222 &1387553617
 CanvasRenderer:
   m_ObjectHideFlags: 0
