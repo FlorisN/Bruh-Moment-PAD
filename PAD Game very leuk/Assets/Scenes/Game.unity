@@ -1923,7 +1923,6 @@ MonoBehaviour:
   - {fileID: 2567385785696338563, guid: b41d5e4a1ed097f44907405c53adfa1e, type: 3}
   - {fileID: 6675567626561910278, guid: 0769ed5145277ba43bd79f51ebfc7e4f, type: 3}
   - {fileID: 1408664435818988764, guid: 1b4468a9b60529245afce85504af119a, type: 3}
-  - {fileID: 1408664435818988764, guid: 1b4468a9b60529245afce85504af119a, type: 3}
 --- !u!4 &775511634
 Transform:
   m_ObjectHideFlags: 0
@@ -2119,7 +2118,6 @@ MonoBehaviour:
   shakePower: 0.5
   shakeTime: 0.2
   camera: {fileID: 1069688745}
-  slowDown: 1
   isShaking: 0
 --- !u!4 &854080993
 Transform:
